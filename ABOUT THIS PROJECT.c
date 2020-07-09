@@ -3,16 +3,19 @@ ABOUT THIS PROJECT
 1. This project was created in STM32CubeMX for STM32F334R8
    Requirement: Two PWMs with 'htimx.Init.Period' and 'sConfigOC.Pulse' need to be adjusted by 4 variable resistors
 
-2. TIM2-Chan2 & TIM16-Chan1 are currenly started by HAL driver and have fixed Frequency & DutyCycle.
+2. TIM2-Chan2 & TIM16-Chan1 are currenly started by HAL driver and have fixed Frequency & DutyCycle. This section of code works.
 	
 	static void MX_TIM2_Init(void)
 	{
 	...
 	htim2.Init.Period = 71;
 	sConfigOC.Pulse = 35;
+	...   
+   	}
 	
+	static void MX_TIM2_Init(void)
+	{
 	...
-
 	htim16.Init.Period = 71;
 	sConfigOC.Pulse = 35;
 	...
