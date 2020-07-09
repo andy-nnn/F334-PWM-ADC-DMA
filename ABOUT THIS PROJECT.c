@@ -53,7 +53,7 @@ ABOUT THIS PROJECT
 	  return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
   	  }
 
-6.  Feed the 'mapped_ADC_xxx' into 'TIM2/TIM16->ARR' and 'TIM2/TIM16->CCMR' to change PWM Frequency and dutyCycle (WRONG!)
+6.  Feed the 'mapped_ADC_xxx' into 'TIM2/TIM16->ARR' and 'TIM2/TIM16->CCMR' to change PWM Frequency and dutyCycle (CORRECT!)
 	mapped_ADC_PA0 = TIM16->ARR
 	mapped_ADC_PA1 = TIM16->CCMR1 
 	mapped_ADC_PA4 = TIM2->ARR
